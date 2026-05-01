@@ -7,11 +7,7 @@ on:
     paths: [ '.github/workflows/build.yml', '.devops/**' ]
   #pull_request:
   #  branches: [ 'master' ]
-
-  # Daily rebuild
-  schedule:
-    - cron: "0 4 * * *"
-
+  
   # Manual rebuild, in case of some important upstream change
   workflow_dispatch:
 
